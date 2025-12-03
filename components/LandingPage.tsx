@@ -4,8 +4,9 @@ import { useRouter } from "next/router";
 import React from "react";
 
 export const LandingPage: React.FC = () =>{
-
     const router = useRouter()
+    const 
+    
     
 
 
