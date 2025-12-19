@@ -127,11 +127,7 @@ export const LandingPage: React.FC = () => {
           <div className="animate-in fade-in slide-in-from-bottom-6 mb-20 flex flex-col items-center justify-center space-y-4 delay-300 duration-1000 md:flex-row md:space-y-0 md:space-x-4">
             <button
               onClick={() => router.push("/signup")}
-<<<<<<< ours
               className="group flex w-full items-center justify-center cursor-pointer rounded-full bg-indigo-600 px-8 py-4 text-lg font-medium text-white transition-all hover:bg-indigo-700 hover:shadow-xl hover:shadow-indigo-500/25 md:w-auto"
-=======
-              className="group flex w-full items-center justify-center rounded-full bg-indigo-600 px-8 py-4 text-lg font-medium text-white transition-all hover:bg-indigo-700 hover:shadow-xl hover:shadow-indigo-500/25 md:w-auto"
->>>>>>> theirs
             >
               Start Now
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
@@ -321,7 +317,6 @@ export const LandingPage: React.FC = () => {
               </div>
             </div>
           </div>
-<<<<<<< ours
         </div>
       </section>
 
@@ -387,83 +382,12 @@ export const LandingPage: React.FC = () => {
         </div>
       </section>
 
-=======
-        </div>
-      </section>
-
-      {/* 5. How It Works */}
-      <section id="how-it-works" className="bg-white py-24">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="mb-16 text-center">
-            <h2 className="mb-4 text-3xl font-bold text-slate-900">
-              From Upload to Answer in Seconds
-            </h2>
-          </div>
-
-          <div className="relative grid grid-cols-1 gap-12 md:grid-cols-3">
-            {/* Connector Line (Desktop) */}
-            <div className="absolute top-12 right-[16%] left-[16%] -z-10 hidden h-0.5 border-t-2 border-dashed border-slate-200 md:block"></div>
-
-            {/* Step 1 */}
-            <div className="relative bg-white p-4 text-center">
-              <div className="relative z-10 mx-auto mb-6 flex h-24 w-24 items-center justify-center rounded-full border border-slate-100 bg-white shadow-sm">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-indigo-50 text-indigo-600">
-                  <Cloud className="h-8 w-8" />
-                </div>
-                <div className="absolute -top-2 -right-2 flex h-8 w-8 items-center justify-center rounded-full border-4 border-white bg-slate-900 font-bold text-white">
-                  1
-                </div>
-              </div>
-              <h3 className="mb-2 text-xl font-bold">Upload Data</h3>
-              <p className="text-slate-500">
-                Drag & drop PDFs, Docs, or connect your Notion workspace.
-              </p>
-            </div>
-
-            {/* Step 2 */}
-            <div className="relative bg-white p-4 text-center">
-              <div className="relative z-10 mx-auto mb-6 flex h-24 w-24 items-center justify-center rounded-full border border-slate-100 bg-white shadow-sm">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-violet-50 text-violet-600">
-                  <Cpu className="h-8 w-8" />
-                </div>
-                <div className="absolute -top-2 -right-2 flex h-8 w-8 items-center justify-center rounded-full border-4 border-white bg-slate-900 font-bold text-white">
-                  2
-                </div>
-              </div>
-              <h3 className="mb-2 text-xl font-bold">Instant Indexing</h3>
-              <p className="text-slate-500">We chunk and vectorise your content automatically.</p>
-            </div>
-
-            {/* Step 3 */}
-            <div className="relative bg-white p-4 text-center">
-              <div className="relative z-10 mx-auto mb-6 flex h-24 w-24 items-center justify-center rounded-full border border-slate-100 bg-white shadow-sm">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-emerald-50 text-emerald-600">
-                  <MessageCircle className="h-8 w-8" />
-                </div>
-                <div className="absolute -top-2 -right-2 flex h-8 w-8 items-center justify-center rounded-full border-4 border-white bg-slate-900 font-bold text-white">
-                  3
-                </div>
-              </div>
-              <h3 className="mb-2 text-xl font-bold">Start Chatting</h3>
-              <p className="text-slate-500">
-                Ask questions and get answers based strictly on your data.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
->>>>>>> theirs
       {/* 6. Pricing */}
       <section id="pricing" className="bg-slate-50 py-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-16 text-center">
             <h2 className="mb-4 text-3xl font-bold text-slate-900">Simple, transparent pricing</h2>
-<<<<<<< ours
             <p className="text-slate-500">Get Started and scale as you grow.</p>
-=======
-            <p className="text-slate-500">Start for free, scale as you grow.</p>
->>>>>>> theirs
           </div>
 
           <div className="grid grid-cols-1 items-start gap-8 md:grid-cols-3">
@@ -476,15 +400,9 @@ export const LandingPage: React.FC = () => {
               </div>
               <button
                 onClick={()=>router.push("/login")}
-<<<<<<< ours
                 className="mb-8 w-full rounded-xl cursor-pointer bg-slate-100 px-4 py-3 font-medium text-slate-900 transition-colors hover:bg-slate-200"
               >
                 Get Started
-=======
-                className="mb-8 w-full rounded-xl bg-slate-100 px-4 py-3 font-medium text-slate-900 transition-colors hover:bg-slate-200"
-              >
-                Start for Free
->>>>>>> theirs
               </button>
               <ul className="space-y-4 text-sm text-slate-600">
                 <li className="flex items-center">
@@ -511,11 +429,7 @@ export const LandingPage: React.FC = () => {
               </div>
               <button
                 onClick={()=>router.push("/login")}
-<<<<<<< ours
                 className="mb-8 w-full rounded-xl cursor-pointer bg-indigo-600 px-4 py-3 font-medium text-white shadow-lg shadow-indigo-200 transition-colors hover:bg-indigo-700"
-=======
-                className="mb-8 w-full rounded-xl bg-indigo-600 px-4 py-3 font-medium text-white shadow-lg shadow-indigo-200 transition-colors hover:bg-indigo-700"
->>>>>>> theirs
               >
                 Get Started
               </button>
@@ -542,11 +456,7 @@ export const LandingPage: React.FC = () => {
                 <span className="text-4xl font-bold text-slate-900">Custom</span>
               </div>
               <button onClick={()=>router.push("/sales-form")}
-<<<<<<< ours
               className="mb-8 w-full rounded-xl cursor-pointer border border-slate-200 bg-white px-4 py-3 font-medium text-slate-900 transition-colors hover:bg-slate-50">
-=======
-              className="mb-8 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 font-medium text-slate-900 transition-colors hover:bg-slate-50">
->>>>>>> theirs
                 Contact Sales
               </button>
               <ul className="space-y-4 text-sm text-slate-600">
@@ -578,7 +488,6 @@ export const LandingPage: React.FC = () => {
             <p className="mb-6 text-sm text-slate-400">
               Making organizational knowledge accessible and actionable through AI.
             </p>
-<<<<<<< ours
             {/* <div className="flex"> */}
             {/*   <input */}
             {/*     type="email" */}
@@ -589,18 +498,6 @@ export const LandingPage: React.FC = () => {
             {/*     Subscribe */}
             {/*   </button> */}
             {/* </div> */}
-=======
-            <div className="flex">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="w-full rounded-l-lg border border-slate-800 bg-slate-900 px-4 py-2 text-sm text-white focus:border-indigo-500 focus:outline-none"
-              />
-              <button className="rounded-r-lg bg-indigo-600 px-4 py-2 text-sm font-medium transition-colors hover:bg-indigo-700">
-                Subscribe
-              </button>
-            </div>
->>>>>>> theirs
           </div>
 
           <div>
