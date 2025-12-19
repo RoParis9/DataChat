@@ -4,6 +4,7 @@ import React from "react";
 import { Hexagon, CheckCircle2, ArrowRight } from "lucide-react";
 import { useAuthStore } from "@/store/AuthStore";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function LoginPage() {
   const login = useAuthStore((state) => state.login);
@@ -172,9 +173,9 @@ export default function LoginPage() {
 
           <p className="text-center text-sm text-slate-500">
             Don't have an account?{" "}
-            <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+            <Link href="/signup" className="font-medium text-indigo-600 hover:text-indigo-500">
               Sign up
-            </a>
+            </Link>
           </p>
         </div>
       </div>
