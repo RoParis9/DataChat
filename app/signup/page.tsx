@@ -83,7 +83,7 @@ export default function LoginPage() {
         <div className="w-full max-w-md space-y-8">
           <div className="text-center lg:text-left">
             <h1 className="text-3xl font-bold text-slate-900">Welcome back</h1>
-            <p className="mt-2 text-slate-500">Enter your details to access your workspace.</p>
+            <p className="mt-2 text-slate-500">Enter your details to create your account.</p>
           </div>
 
           <form onSubmit={handleLogin} className="space-y-6">
@@ -112,17 +112,15 @@ export default function LoginPage() {
                   type="checkbox"
                   className="rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
                 />
+                <span className="ml-2 text-sm text-slate-600">Remember me</span>
               </label>
-              <a href="#" className="text-sm font-medium text-indigo-600 hover:text-indigo-500">
-                Forgot password?
-              </a>
             </div>
 
             <button
               type="submit"
               className="flex w-full items-center justify-center rounded-lg bg-slate-900 px-4 py-3 font-medium text-white shadow-lg shadow-slate-900/20 transition-all hover:bg-slate-800 focus:ring-2 focus:ring-slate-900 focus:ring-offset-2 focus:outline-none"
             >
-              Sign in
+              Sign 
               <ArrowRight className="ml-2 h-4 w-4" />
             </button>
           </form>
@@ -171,9 +169,9 @@ export default function LoginPage() {
           </div>
 
           <p className="text-center text-sm text-slate-500">
-            Don't have an account?{" "}
-            <Link href="/signup" className="font-medium text-indigo-600 hover:text-indigo-500">
-              Sign up
+            Already have an account?{" "}
+            <Link href="/login" className="font-medium text-indigo-600 hover:text-indigo-500">
+              login
             </Link>
           </p>
         </div>
