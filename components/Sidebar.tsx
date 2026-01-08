@@ -8,7 +8,7 @@ interface SidebarProps {
     setActiveTab?: (tab: Tab) => void;
 }
 
-export const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => {
+export const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActieTab }) => {
     //TODO AUTH
     //const {user} = userAuthStore()
     const pathname = usePathname()
