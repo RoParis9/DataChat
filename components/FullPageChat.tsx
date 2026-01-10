@@ -1,5 +1,5 @@
 "use client"
-import { MessageSquare, Plus } from "lucide-react"
+import { ChevronDown, MessageSquare, Plus, Sparkle, Sparkles } from "lucide-react"
 import { useState } from "react";
 
 export interface ChatSession {
@@ -29,7 +29,8 @@ const SUGGESTED_QUESTIONS_MOCK = [
 
 
 export const FullPageChat: React.FC = () => {
-    const [activeSessionid, setActiveSessionId] = useState<string | null>(null);
+    const [activeSessionId, setActiveSessionId] = useState<string | null>(null);
+    const [model, setModel] = useState(null)
     return (
         <div className="flex h-[calc(100vh-64px)] bg-white overflow-hidden">
 
@@ -37,7 +38,7 @@ export const FullPageChat: React.FC = () => {
             <div className="w-64 bg-slate-50 border-r border-slate-200 flex flex-col">
                 <div className="p-4">
                     <button
-                      onClick={() => console.log("hi")}
+                        onClick={() => console.log("hi")}
                         className="w-full flex items-center justify-center space-x-2 bg-indigo-600 hover:bg-indigo-700 text-white py-2.5 rounded-lg shadow-sm transition-all font-medium text-sm"
                     >
                         <Plus className="w-4 h-4" />
@@ -78,6 +79,24 @@ export const FullPageChat: React.FC = () => {
                     </div>
                 </div>
             </div>
+
+            {/*Main Chat*/}
+            <div className="flex-1 flex flex-col relative">
+
+                {/*Model Selector Top Right*/}
+                <div className="absolute top-4 right-6 z-10">
+                    <div className="relative group">
+                        <button className="flex items-center space-x-2 bg-white border border-slate-200 hover:border-indigo-300 text-slate-700 px-3 py-1.5 rounded-lg text-sm font-medium shadow-sm transition-all">
+                            <Sparkles className="w-3.5 h-3.5 text-indigo-500" />
+                            <span>{model === 'gpt-4o' ? 'GPT-4o (Smart)' : 'GPT-3.5 (Fast)'}</span>
+                            <ChevronDown className="w-3.5 h-3.5 text-slate-400" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
 
     )
